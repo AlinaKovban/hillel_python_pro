@@ -13,7 +13,7 @@ def generate_password():
     return result
     
 
-@app.route('/calculate')
+@app.route('/calculate_average')
 def calculate_average():
     height_weight = pd.read_csv('hw.csv')
     mean_height = height_weight[' Height(Inches)'].mean()
