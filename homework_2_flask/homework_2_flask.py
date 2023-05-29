@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/password')
 def generate_password():
     password = string.ascii_letters + string.digits + string.punctuation 
-    result = ''.join(random.choice(password) for i in range(random.randint(10, 20)))
+    result = ''.join(random.choices(password, k = random.randint(10, 20)))
     return result
     
 
