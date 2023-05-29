@@ -1,7 +1,7 @@
-from flask import Flask
-import pandas as pd
 import random
 import string
+import pandas as pd
+from flask import Flask
 
 
 app = Flask(__name__)
