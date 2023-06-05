@@ -37,7 +37,7 @@ def get_bitcoin_value():
     currency = request.args.get("currency", "USD")
     convert = request.args.get("convert", "1")
     
-    if data_from_url.status_code not in (HTTPStatus.OK):
+    if data_from_url.status_code not in (HTTPStatus.OK,):
         return Response(
             "ERROR: Something went wrong",
             status=data_from_url.status_code
