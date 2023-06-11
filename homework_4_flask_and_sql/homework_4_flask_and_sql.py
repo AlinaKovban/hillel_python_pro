@@ -77,7 +77,8 @@ def get_all_info_about_track(track_id):
                JOIN customers ON invoices.CustomerId = customers.CustomerId
                JOIN employees ON employees.EmployeeId = customers.SupportRepId
                JOIN playlist_track ON tracks.TrackId = playlist_track.TrackId
-               JOIN playlists ON playlists.PlaylistId = playlist_track.PlaylistId
+               JOIN playlists ON playlists.PlaylistId = \
+                               playlist_track.PlaylistId
             """
 
     if track_id:
