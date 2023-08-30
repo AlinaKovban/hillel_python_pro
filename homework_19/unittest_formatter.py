@@ -1,6 +1,6 @@
 import unittest
 
-from homework_19 import formatted_name
+from for_testing import formatted_name
 
 
 class TestFormatter(unittest.TestCase):
